@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import PropTypes from "prop-types";
 import styled, { createGlobalStyle } from "styled-components";
 import { CloseOutlined } from "@ant-design/icons";
+import { backUrl } from "../../config/config";
 
 const Overlay = styled.div`
   position: fixed;
@@ -95,7 +96,7 @@ const ImagesZoom = ({ images, onClose }) => {
           >
             {images.map((v) => (
               <ImgWrapper key={v.src}>
-                <img src={`http://localhost:3065/${v.src}`} alt={v.src} />
+                <img src={`${backUrl}/${v.src}`} alt={v.src} />
               </ImgWrapper>
             ))}
           </Slider>

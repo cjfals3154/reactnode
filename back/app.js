@@ -41,8 +41,8 @@ app.use(
     credentials: true,
   })
 );
-app.use(express.json()); // 프론트에서 온 json데이터를 req.body에 넣어주는 역활
 app.use("/", express.static(path.join(__dirname, "uploads")));
+app.use(express.json()); // 프론트에서 온 json데이터를 req.body에 넣어주는 역활
 app.use(express.urlencoded({ extended: true })); // 프론트에서 온 formsubmit 데이터를 req.body에 넣어주는 역활!!
 
 app.use(cookieParser(process.env.COOKIE_SECRET));

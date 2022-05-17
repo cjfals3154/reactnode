@@ -1,6 +1,4 @@
-import shortId from "shortid";
-import produce from "immer";
-import faker from "faker";
+import produce from "../util/produce";
 import { LOAD_USER_REQUEST } from "./user";
 export const initialState = {
   mainPosts: [

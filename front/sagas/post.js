@@ -303,7 +303,7 @@ function* watchRemovePost() {
 }
 
 function* watchLoadPosts() {
-  yield takeLatest(LOAD_POSTS_REQUEST, loadPosts);
+  yield throttle(3000, LOAD_POSTS_REQUEST, loadPosts);
 }
 
 function* watchLikePost() {
@@ -325,11 +325,11 @@ function* watchLoadPost() {
 }
 
 function* watchLoadHashtagPosts() {
-  yield takeLatest(LOAD_HASHTAG_POSTS_REQUEST, loadHashtagPosts);
+  yield throttle(3000, LOAD_HASHTAG_POSTS_REQUEST, loadHashtagPosts);
 }
 
 function* watchLoadUserPosts() {
-  yield takeLatest(LOAD_USER_POSTS_REQUEST, loadUserPosts);
+  yield throttle(3000, LOAD_USER_POSTS_REQUEST, loadUserPosts);
 }
 export default function* postSaga() {
   yield all([

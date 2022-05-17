@@ -6,10 +6,8 @@ import React, {
   useState,
 } from "react";
 import { Form, Input, Button, Upload } from "antd";
-import { InboxOutlined } from "@ant-design/icons/";
 import { useDispatch, useSelector } from "react-redux";
 import {
-  addPost,
   UPLOAD_IMAGES_REQUEST,
   REMOVE_IMAGE,
   ADD_POST_REQUEST,

@@ -1,5 +1,4 @@
-import produce from "../util/produce";
-import { LOAD_USER_REQUEST } from "./user";
+import produce from "immer";
 export const initialState = {
   mainPosts: [
     // {

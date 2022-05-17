@@ -1,4 +1,4 @@
-import produce from "immer";
+import produce from "../util/produce";
 
 export const initialState = {
   loadMyInfoLoading: false, // 내정보 유지

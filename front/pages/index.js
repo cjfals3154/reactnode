@@ -74,7 +74,7 @@ export const getServerSideProps = wrapper.getServerSideProps(
 
       await store.sagaTask.toPromise();
 
-      // configureStore.js 의 store.sagaTask
+      // configureStore.js 의 store.sagaTask!!
     }
 );
 export default Home;

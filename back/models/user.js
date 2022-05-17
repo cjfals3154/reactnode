@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
       email: {
         type: DataTypes.STRING(30),
         allowNull: false, // true면 선택 false필수 이메일 로그인이 필수라서 false함
-        unique: true, // 고유한값
+        unique: true, // 고유한값!!
       },
       nickname: {
         type: DataTypes.STRING(30),

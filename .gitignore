@@ -1,6 +1,6 @@
 .serverless
 /front/build
-react-nodebire.pem
+react-nodebird.pem
 node_modules
 .env
 .next
